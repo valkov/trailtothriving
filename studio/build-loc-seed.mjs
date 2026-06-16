@@ -76,6 +76,17 @@ const ORDER = {
   'session-free-intro': 1, 'session-nature-assisted': 2, 'session-psychomotor': 3, 'session-package-5': 4,
 }
 
+// real Stripe TEST Payment Links (created via CLI), keyed by document _id
+const LINKS = {
+  'event-geirangerfjord': 'https://buy.stripe.com/test_dRmfZjd251SBa87eDa4ZG00',
+  'event-preikestolen': 'https://buy.stripe.com/test_00w4gB2nreFnfsr9iQ4ZG01',
+  'event-lofoten': 'https://buy.stripe.com/test_6oU14p9PTfJrbcbeDa4ZG02',
+  'event-chamonix': 'https://buy.stripe.com/test_bJe3cx9PT7cV3JJamU4ZG03',
+  'session-nature-assisted': 'https://buy.stripe.com/test_bJe8wRbY1fJr7ZZ0Mk4ZG04',
+  'session-psychomotor': 'https://buy.stripe.com/test_bJedRbbY154Ndkj2Us4ZG05',
+  'session-package-5': 'https://buy.stripe.com/test_7sYcN7fadgNvgwv0Mk4ZG06',
+}
+
 const q = async (query) => {
   const r = await fetch(`https://${PID}.api.sanity.io/v${V}/data/query/${DS}?query=${encodeURIComponent(query)}`)
   return (await r.json()).result
@@ -88,7 +99,7 @@ for (const d of docs) {
   if (d._type === 'event') {
     out.push({
       _id: d._id, _type: 'event', order: ORDER[d._id] || d.order || 10, hue: d.hue,
-      ...(d.paymentUrl ? {paymentUrl: d.paymentUrl} : {}),
+      ...((LINKS[d._id] || d.paymentUrl) ? {paymentUrl: LINKS[d._id] || d.paymentUrl} : {}),
       ...(d.bookingUrl ? {bookingUrl: d.bookingUrl} : {}),
       ...(d.thumbnail ? {thumbnail: d.thumbnail} : {}),
       ...(d.detailImage ? {detailImage: d.detailImage} : {}),
@@ -110,7 +121,7 @@ for (const d of docs) {
     out.push({
       _id: d._id, _type: 'session', order: ORDER[d._id] || d.order || 10, hue: d.hue,
       ...(d.schedulerUrl ? {schedulerUrl: d.schedulerUrl} : {}),
-      ...(d.paymentUrl ? {paymentUrl: d.paymentUrl} : {}),
+      ...((LINKS[d._id] || d.paymentUrl) ? {paymentUrl: LINKS[d._id] || d.paymentUrl} : {}),
       ...(d.image ? {image: d.image} : {}),
       title: ls(strOf(d.title), t.title),
       format: ls(strOf(d.format), t.format),
