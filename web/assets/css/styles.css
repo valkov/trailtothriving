@@ -90,8 +90,9 @@ p { margin: 0 0 1em; }
 .nav-toggle span { display: block; width: 24px; height: 2px; background: var(--forest-d); margin: 5px 0; border-radius: 2px; }
 
 /* ---- hero ---------------------------------------------------------------- */
-.hero { position: relative; overflow: hidden; background-image: url("../images/hero-bg.jpg"); background-size: cover; background-position: center; color: #fff; aspect-ratio: 1500 / 677; min-height: 460px; display: flex; align-items: center; }
-.hero__inner { position: relative; z-index: 2; padding: 3rem 0; max-width: 720px; text-shadow: 0 1px 3px rgba(0, 0, 0, 0.65), 0 2px 24px rgba(0, 0, 0, 0.6); }
+.hero { position: relative; overflow: hidden; background-image: url("../images/hero-bg.jpg"); background-size: cover; background-position: center; color: #fff; aspect-ratio: 1500 / 677; min-height: 460px; display: flex; align-items: flex-start; }
+.hero__inner { position: relative; z-index: 2; padding: 3.25rem 0; max-width: 720px; }
+.hero h1, .hero__tag, .hero__intro { text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6), 0 2px 22px rgba(0, 0, 0, 0.55); }
 .hero h1 { color: #fff; font-size: clamp(2.6rem, 6vw, 4.4rem); letter-spacing: -0.01em; }
 .hero__tag { font-size: clamp(1.1rem, 2.4vw, 1.4rem); color: rgba(255, 255, 255, 0.94); font-family: var(--font-head); font-style: italic; }
 .hero__intro { font-size: 1.08rem; color: rgba(255, 255, 255, 0.9); max-width: 540px; }
