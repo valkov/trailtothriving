@@ -2,8 +2,8 @@
    Trail to Thriving — styles
    ========================================================================== */
 :root {
-  --forest: #2f5d3a;
-  --forest-d: #21422b;
+  --forest: #3d7a4e;
+  --forest-d: #2f5a3d;
   --moss: #5b8c5a;
   --sage: #a9c4a0;
   --sand: #e9e3d3;
@@ -90,7 +90,7 @@ p { margin: 0 0 1em; }
 .nav-toggle span { display: block; width: 24px; height: 2px; background: var(--forest-d); margin: 5px 0; border-radius: 2px; }
 
 /* ---- hero ---------------------------------------------------------------- */
-.hero { position: relative; overflow: hidden; background: linear-gradient(160deg, #cfe0c4 0%, #6f9e6c 55%, var(--forest) 100%); color: #fff; }
+.hero { position: relative; overflow: hidden; background: linear-gradient(160deg, #cfe0c4 0%, #6f9e6c 55%, #2f5d3a 100%); color: #fff; }
 .hero__inner { position: relative; z-index: 2; padding: 6rem 0 7rem; max-width: 720px; }
 .hero h1 { color: #fff; font-size: clamp(2.6rem, 6vw, 4.4rem); letter-spacing: -0.01em; }
 .hero__tag { font-size: clamp(1.1rem, 2.4vw, 1.4rem); color: rgba(255, 255, 255, 0.94); font-family: var(--font-head); font-style: italic; }
