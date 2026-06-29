@@ -198,7 +198,7 @@ p { margin: 0 0 1em; }
 .cta-band .btn { margin-top: 1.4rem; }
 
 /* ---- footer -------------------------------------------------------------- */
-.site-footer { background: var(--forest-d); color: rgba(255,255,255,0.85); padding: 3.2rem 0 2rem; }
+.site-footer { background: var(--sun); color: rgba(255,255,255,0.9); padding: 3.2rem 0 2rem; }
 .footer-grid { display: flex; justify-content: space-between; gap: 2rem; flex-wrap: wrap; }
 .footer-brand { display: flex; align-items: center; gap: 0.6rem; font-family: var(--font-head); font-size: 1.2rem; color: #fff; }
 .footer-brand img { width: 34px; height: 34px; }
@@ -313,7 +313,7 @@ p { margin: 0 0 1em; }
 .site-footer::before {
   content: ""; position: absolute; left: 0; right: 0; top: -73px; height: 74px; z-index: 2;
   pointer-events: none;
-  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 70' preserveAspectRatio='none'%3E%3Cpath d='M0,40 C360,6 720,10 1080,28 C1270,37 1370,44 1440,42 L1440,70 L0,70 Z' fill='%231b472e'/%3E%3C/svg%3E") no-repeat top center / 100% 100%;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 70' preserveAspectRatio='none'%3E%3Cpath d='M0,40 C360,6 720,10 1080,28 C1270,37 1370,44 1440,42 L1440,70 L0,70 Z' fill='%23557f4d'/%3E%3C/svg%3E") no-repeat top center / 100% 100%;
 }
 
 /* footer columns: vinatur-ish sage headings + hovers */
