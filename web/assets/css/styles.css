@@ -2,25 +2,25 @@
    Trail to Thriving — styles
    ========================================================================== */
 :root {
-  --forest: #588a52;
-  --forest-d: #436b3f;
-  --moss: #5b8c5a;
+  --forest: #3f6b41;
+  --forest-d: #1b472e;
+  --moss: #839d6f;
   --sage: #a9c4a0;
   --sand: #e9e3d3;
-  --cream: #f7f5ec;
+  --cream: #f7f6f3;
   --cream-2: #fffdf6;
   --ink: #26302a;
   --ink-soft: #51605a;
-  --sun: #d98b3f;
-  --sun-d: #c0762d;
+  --sun: #557f4d;
+  --sun-d: #46703f;
   --line: rgba(38, 48, 42, 0.12);
   --shadow: 0 14px 40px rgba(33, 66, 43, 0.16);
   --shadow-sm: 0 6px 18px rgba(33, 66, 43, 0.1);
   --radius: 16px;
   --radius-lg: 24px;
   --wrap: 1140px;
-  --font-head: "Manrope", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-  --font-body: "Manrope", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --font-head: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --font-body: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
 
 * { box-sizing: border-box; }
