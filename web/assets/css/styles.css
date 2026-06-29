@@ -411,19 +411,3 @@ p { margin: 0 0 1em; }
   .hero .hero__cta { justify-content: flex-start; }
 }
 
-/* ---- birch bark page texture (0.6 alpha — color wash = 1-0.6 = 0.4 overlay) */
-body {
-  background-image:
-    linear-gradient(rgba(247, 246, 243, 0.4), rgba(247, 246, 243, 0.4)),
-    url("../images/birch-bark.jpg");
-  background-size: 100% 100%, 800px;
-  background-repeat: no-repeat, repeat;
-}
-.section--tint {
-  background-color: var(--cream-2);
-  background-image:
-    linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)),
-    url("../images/birch-bark.jpg");
-  background-size: 100% 100%, 800px;
-  background-repeat: no-repeat, repeat;
-}
