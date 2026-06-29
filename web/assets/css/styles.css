@@ -267,7 +267,7 @@ p { margin: 0 0 1em; }
   .cta-band { padding: 2.2rem 1.4rem; }
   /* hero: show full image as a top banner, text stacked below (no zoom) */
   .hero { aspect-ratio: auto; min-height: 0; display: block; background-image: url("../images/hero-bg.jpg"); background-color: var(--forest-d); background-size: 100% auto; background-position: top center; background-repeat: no-repeat; padding-top: calc(100vw * 677 / 1500); }
-  .hero__inner { padding: 1.6rem 0 2.4rem; }
+  .hero__inner { padding: 1.6rem 0 6.5rem; }
 }
 @media (max-width: 480px) {
   .gallery-grid { grid-template-columns: 1fr; }
