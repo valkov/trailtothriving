@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Event — Trail to Thriving</title>
-  <meta name="description" content="Trip details — Trail to Thriving guided hikes and retreats." />
+  <title>About — Trail to Thriving</title>
+  <meta name="description" content="About Trail to Thriving — nature-assisted therapy and guided wellbeing hikes with Tanya Ekelin." />
   <link rel="icon" type="image/png" href="assets/images/logo.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -36,9 +36,21 @@
     </div>
   </header>
 
-  <section class="section">
-    <div class="wrap detail">
-      <div id="event-detail"><!-- filled by main.js from ?id=... --></div>
+  <section class="section about-page">
+    <div class="wrap about-page__inner">
+      <div class="about-page__text">
+        <p class="eyebrow" data-i18n="about_eyebrow">About</p>
+        <h1 data-i18n="about_heading">Nature-assisted therapy, on foot</h1>
+        <p data-i18n-html="about_p1"></p>
+        <p class="muted" data-i18n="about_p2"></p>
+        <div class="hero__cta" style="margin-top:1.6rem">
+          <a class="btn btn--solid" href="index.html#sessions" data-i18n="hero_book_session">Book a session</a>
+          <a class="btn btn--ghost" href="index.html#events" data-i18n="see_events">See events</a>
+        </div>
+      </div>
+      <div class="about-page__photo">
+        <img src="assets/images/tanya.jpg" alt="Tanya Ekelin" onerror="this.onerror=null;this.src='assets/images/hero-bg.jpg'" />
+      </div>
     </div>
   </section>
 
@@ -61,6 +73,7 @@
             <img src="assets/images/logo.png" alt="" onerror="this.onerror=null;this.src='assets/images/logo.svg'" />
             <span data-brand-name>Trail to Thriving</span>
           </div>
+          <p class="muted" style="color:rgba(255,255,255,0.7);max-width:280px;margin-top:0.6rem" data-i18n="footer_tagline">Guided wellbeing hikes &amp; nature retreats across Scandinavia and the Alps.</p>
           <div class="socials">
             <a href="#" data-link-instagram target="_blank" rel="noopener">Instagram</a>
             <a href="#" data-link-facebook target="_blank" rel="noopener">Facebook</a>
@@ -68,9 +81,29 @@
             <a href="#" data-link-email data-i18n="label_email">Email</a>
           </div>
         </div>
+        <div class="footer-cols">
+          <div>
+            <h4 data-i18n="footer_explore">Explore</h4>
+            <ul>
+              <li><a href="index.html#events" data-i18n="nav_events">Events</a></li>
+              <li><a href="index.html#sessions" data-i18n="nav_sessions">Sessions</a></li>
+              <li><a href="index.html#moments" data-i18n="nav_gallery">Gallery</a></li>
+              <li><a href="about.html" data-i18n="nav_about">About</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4 data-i18n="footer_getintouch">Get in touch</h4>
+            <ul>
+              <li><a href="#" data-link-email data-brand-email>hello@trailtothriving.com</a></li>
+              <li><a href="index.html#sessions" data-i18n="hero_book_session">Book a session</a></li>
+              <li><a href="index.html#events" data-i18n="hero_find_event">Find an event</a></li>
+            </ul>
+          </div>
+        </div>
       </div>
       <div class="footer-bottom">
         <span>© <span data-year>2026</span> <span data-brand-name>Trail to Thriving</span>. <span data-i18n="footer_rights">All rights reserved.</span></span>
+        <span data-i18n="footer_made">Made with care for the outdoors 🌲</span>
       </div>
     </div>
   </footer>
