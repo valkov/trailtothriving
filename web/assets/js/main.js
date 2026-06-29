@@ -490,7 +490,50 @@
   // re-render CMS content (titles, blurbs, itineraries…) in the chosen language
   window.__onLocaleChange = function () { renderContent(); };
 
+  function renderFooter() {
+    var f = $(".site-footer");
+    if (!f) return;
+    f.innerHTML =
+      '<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>' +
+        '<clipPath id="fcPhoto" clipPathUnits="objectBoundingBox"><path d="M0.50,0.01 C0.76,0 0.99,0.18 0.98,0.46 C0.98,0.68 0.90,0.90 0.62,0.98 C0.40,1.03 0.14,0.92 0.05,0.64 C-0.01,0.40 0.08,0.16 0.30,0.06 C0.37,0.02 0.44,0.01 0.50,0.01 Z"/></clipPath>' +
+        '<clipPath id="fcBubble" clipPathUnits="objectBoundingBox"><path d="M0.02,0.40 C0.02,0.16 0.16,0.05 0.40,0.05 C0.62,0.05 0.78,0 0.90,0.10 C1,0.19 0.99,0.40 0.99,0.56 C0.99,0.80 0.88,0.98 0.62,0.97 C0.44,0.965 0.26,1 0.14,0.90 C0.04,0.82 0.02,0.62 0.02,0.40 Z"/></clipPath>' +
+      '</defs></svg>' +
+      '<div class="wrap footer-inner">' +
+        '<div class="footer-cols">' +
+          '<div class="footer-col">' +
+            '<h4 data-i18n="footer_getintouch">Get in touch</h4>' +
+            '<a href="#" data-link-email data-brand-email>hello@trailtothriving.com</a>' +
+            '<span class="footer-line">Phone: ---------</span>' +
+            '<a href="#" data-link-instagram target="_blank" rel="noopener">Instagram</a>' +
+            '<a href="#" data-link-facebook target="_blank" rel="noopener">Facebook</a>' +
+            '<a href="#" data-link-telegram target="_blank" rel="noopener">Telegram</a>' +
+            '<span class="footer-line">CVR: ---------</span>' +
+          '</div>' +
+          '<div class="footer-col">' +
+            '<h4 data-i18n="footer_explore">Explore</h4>' +
+            '<a href="index.html#events" data-i18n="nav_events">Events</a>' +
+            '<a href="index.html#sessions" data-i18n="nav_sessions">Sessions</a>' +
+            '<a href="index.html#moments" data-i18n="nav_gallery">Gallery</a>' +
+            '<a href="about.html" data-i18n="nav_about">About</a>' +
+          '</div>' +
+        '</div>' +
+        '<div class="footer-contact">' +
+          '<div class="footer-contact__photo"><img src="assets/images/tanya.jpg" alt="Tanya Ekelin" onerror="this.onerror=null;this.src=\'assets/images/hero-bg.jpg\'"></div>' +
+          '<div class="footer-contact__bubble">' +
+            '<h3 data-i18n="contact_heading">Have a question?</h3>' +
+            '<p data-i18n="contact_text">Curious about a hike, a retreat or a 1:1 session? Reach out — Tanya is happy to help.</p>' +
+            '<p class="footer-contact__line"><span class="fc-lbl">Phone:</span> <span class="fc-val">---------</span></p>' +
+            '<p class="footer-contact__line"><span class="fc-lbl" data-i18n="label_email">Email</span>: <a class="fc-val" href="#" data-link-email data-brand-email>hello@trailtothriving.com</a></p>' +
+            '<a class="footer-contact__more" href="about.html" data-i18n="read_more">Read more</a>' +
+          '</div>' +
+        '</div>' +
+      '</div>' +
+      '<div class="wrap footer-bottom">' +
+        '<span>© <span data-year></span> <span data-brand-name>Trail to Thriving</span>. <span data-i18n="footer_rights">All rights reserved.</span></span>' +
+      '</div>';
+  }
   function render() {
+    renderFooter();
     applyBrand();
     renderContent();
     initNav();
