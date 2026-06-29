@@ -41,7 +41,7 @@ p { margin: 0 0 1em; }
 
 .wrap { width: min(var(--wrap), 100% - 3rem); margin-inline: auto; }
 .section { padding: 5.5rem 0; }
-#moments { padding-top: calc(5.5rem - 20px); }
+#moments { padding-top: calc(5.5rem - 40px); }
 .section--tint { background: var(--cream-2); }
 .section__head { max-width: 640px; margin-bottom: 2.6rem; }
 .eyebrow { text-transform: uppercase; letter-spacing: 0.18em; font-size: 0.78rem; font-weight: 600; color: var(--moss); margin: 0 0 0.6rem; }
